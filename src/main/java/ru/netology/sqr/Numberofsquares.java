@@ -1,7 +1,6 @@
 package ru.netology.sqr;
 
 
-
 public class Numberofsquares {
     public static void summ(String[] args) {
         SQRService service = new SQRService();
@@ -10,4 +9,4 @@ public class Numberofsquares {
         int numberofsquares = service.calculate(lower, hight);
 
     }
-    }
+}
