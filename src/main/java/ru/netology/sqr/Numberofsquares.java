@@ -7,8 +7,7 @@ public class Numberofsquares {
         SQRService service = new SQRService();
         int lower = 200;
         int hight = 300;
-        int numberofsquares;
-        numberofsquares = service.calculate(lower, hight);
+        int numberofsquares = service.calculate(lower, hight);
 
     }
     }
