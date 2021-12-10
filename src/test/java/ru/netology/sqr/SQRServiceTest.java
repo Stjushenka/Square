@@ -14,32 +14,32 @@ class SQRServiceTest {
     @Test
     public void testCalculate() {
         SQRService service = new SQRService();
-        int add = service.calculate(200, 300);
-        assertEquals(3, add);
+        int numberofsquares = service.calculate(200, 300);
+        assertEquals(3, numberofsquares);
 
     }
 
     @Test
     public void testCalculatelowerfail() {
         SQRService service = new SQRService();
-        int add = service.calculate(100, 300);
-        assertEquals(8, add);
+        int numberofsquares = service.calculate(100, 300);
+        assertEquals(8, numberofsquares);
 
     }
 
     @Test
     public void testCalculateacountfail() {
         SQRService service = new SQRService();
-        int add = service.calculate(200, 300);
-        assertEquals(8, add);
+        int numberofsquares = service.calculate(200, 300);
+        assertEquals(8, numberofsquares);
 
     }
 
     @Test
     public void testCalculatelower2() {
         SQRService service = new SQRService();
-        int add = service.calculate(150, 300);
-        assertEquals(5, add);
+        int numberofsquares = service.calculate(150, 300);
+        assertEquals(5, numberofsquares);
 
     }
 
