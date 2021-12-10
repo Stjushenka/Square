@@ -1,10 +1,5 @@
 package ru.netology.sqr;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
-
-import static java.util.Arrays.*;
 
 public class SQRService {
             public int calculate (int lower, int hight) {
