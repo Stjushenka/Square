@@ -19,14 +19,14 @@ class SQRServiceTest {
 
     }
     @Test
-    public void testCalculatelower() {
+    public void testCalculatelowerfail() {
         SQRService service = new SQRService();
         int add = service.calculate(100,300);
         assertEquals(8, add);
 
     }
     @Test
-    public void testCalculateacount() {
+    public void testCalculateacountfail() {
         SQRService service = new SQRService();
         int add = service.calculate(200,300);
         assertEquals(8, add);
