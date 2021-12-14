@@ -1,11 +1,11 @@
 package ru.netology.sqr;
 
 public class SQRService{
-    public int calculate (int lower, int hight, int i) {
+    public int calculate (int lower, int hight) {
         int count = 0;
 
-        for (i = 0; i <= 99; i++) {
-            if (i * i > lower && i * i < hight) {
+        for (int i = 10; i <= 99; i++) {
+            if (i * i >= lower & i * i <= hight) {
                 count++;
                 System.out.println("Квадрат " + i);
                                 }

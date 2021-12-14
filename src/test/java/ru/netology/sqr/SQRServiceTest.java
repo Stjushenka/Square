@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.CsvSource;
         @Test
         public void testCalculate() {
             SQRService service = new SQRService();
-            int number = service.calculate(200, 300, 10);
+            int number = service.calculate(200, 300);
             assertEquals(3, number);
 
         }
@@ -21,23 +21,15 @@ import org.junit.jupiter.params.provider.CsvSource;
         @Test
         public void testCalculateLower() {
             SQRService service = new SQRService();
-            int number = service.calculate(99, 300, 10);
+            int number = service.calculate(99, 300);
             assertEquals(8, number);
-
-        }
-
-        @Test
-        public void testCalculateCount() {
-            SQRService service = new SQRService();
-            int number = service.calculate(200, 300, 10);
-            assertEquals(3, number);
 
         }
 
         @Test
         public void testCalculateSqr() {
             SQRService service = new SQRService();
-            int number = service.calculate(150, 300, 12);
+            int number = service.calculate(150, 300);
             assertEquals(5, number);
 
         }
@@ -46,8 +38,8 @@ import org.junit.jupiter.params.provider.CsvSource;
         public void testCalculateSqr2() {
             SQRService service = new SQRService();
 
-            int number = service.calculate(0, 300, 0);
-            assertEquals(17, number);
+            int number = service.calculate(0, 300);
+            assertEquals(8, number);
 
         }
 
@@ -55,8 +47,17 @@ import org.junit.jupiter.params.provider.CsvSource;
         public void testCalculateSqr3() {
             SQRService service = new SQRService();
 
-            int number = service.calculate(150, 300, 0);
-            assertEquals(5, number);
+            int number = service.calculate(200, 600);
+            assertEquals(10, number);
+
+        }
+
+        @Test
+        public void testCalculateSqr0() {
+            SQRService service = new SQRService();
+
+            int number = service.calculate(260, 285);
+            assertEquals(0, number);
 
         }
 
